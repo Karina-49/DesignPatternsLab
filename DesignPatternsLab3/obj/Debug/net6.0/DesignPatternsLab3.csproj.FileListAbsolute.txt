@@ -1,0 +1,14 @@
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\bin\Debug\net6.0\DesignPatternsLab3.exe
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\bin\Debug\net6.0\DesignPatternsLab3.deps.json
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\bin\Debug\net6.0\DesignPatternsLab3.runtimeconfig.json
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\bin\Debug\net6.0\DesignPatternsLab3.dll
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\bin\Debug\net6.0\DesignPatternsLab3.pdb
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\obj\Debug\net6.0\DesignPatternsLab3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\obj\Debug\net6.0\DesignPatternsLab3.AssemblyInfoInputs.cache
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\obj\Debug\net6.0\DesignPatternsLab3.AssemblyInfo.cs
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\obj\Debug\net6.0\DesignPatternsLab3.csproj.CoreCompileInputs.cache
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\obj\Debug\net6.0\DesignPatternsLab3.dll
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\obj\Debug\net6.0\refint\DesignPatternsLab3.dll
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\obj\Debug\net6.0\DesignPatternsLab3.pdb
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\obj\Debug\net6.0\DesignPatternsLab3.genruntimeconfig.cache
+C:\Users\Honor\source\repos\DesignPatternsLab3\DesignPatternsLab3\obj\Debug\net6.0\ref\DesignPatternsLab3.dll
