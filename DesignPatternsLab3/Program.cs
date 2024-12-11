@@ -1,21 +1,52 @@
 ﻿using DesignPatternsLab3;
+using System;
 
-class Program
+namespace DesignPatternsLab3
 {
-    static void Main(string[] args)
+    class Program
     {
-        GUIFactory factory = new WindowsFactory();
-        Button button = factory.CreateButton();
-        Checkbox checkbox = factory.CreateCheckbox();
+        static void Main(string[] args)
+        {
+            // Паттерн Singleton
+            Console.WriteLine("=== Singleton ===");
+            Singleton instance1 = Singleton.GetInstance();
+            Singleton instance2 = Singleton.GetInstance();
+            Console.WriteLine(object.ReferenceEquals(instance1, instance2)); // True, так как это один и тот же экземпляр
+            instance1.ShowMessage();
 
-        button.Click();
-        checkbox.Toggle();
+            // Паттерн Factory Method
+            Console.WriteLine("\n=== Factory Method ===");
+            ShapeFactory shapeFactory = new CircleFactory();
+            Shape circle = shapeFactory.CreateShape();
+            circle.Draw();  // Рисуем круг!
 
-        factory = new MacFactory();
-        button = factory.CreateButton();
-        checkbox = factory.CreateCheckbox();
+            shapeFactory = new SquareFactory();
+            Shape square = shapeFactory.CreateShape();
+            square.Draw();  // Рисуем квадрат!
 
-        button.Click();
-        checkbox.Toggle();
+            // Паттерн Abstract Factory
+            Console.WriteLine("\n=== Abstract Factory ===");
+            GUIFactory windowsFactory = new WindowsFactory();
+            Button windowsButton = windowsFactory.CreateButton();
+            Checkbox windowsCheckbox = windowsFactory.CreateCheckbox();
+
+            windowsButton.Click();  // Windows Button clicked!
+            windowsCheckbox.Toggle();  // Windows Checkbox toggled!
+
+            GUIFactory macFactory = new MacFactory();
+            Button macButton = macFactory.CreateButton();
+            Checkbox macCheckbox = macFactory.CreateCheckbox();
+
+            macButton.Click();  // Mac Button clicked!
+            macCheckbox.Toggle();  // Mac Checkbox toggled!
+
+            // Паттерн Builder
+            Console.WriteLine("\n=== Builder ===");
+            PizzaBuilder pizzaBuilder = new HawaiianPizzaBuilder();
+            PizzaDirector pizzaDirector = new PizzaDirector(pizzaBuilder);
+            pizzaDirector.ConstructPizza();  // Строим пиццу
+            Pizza pizza = pizzaBuilder.GetResult();
+            Console.WriteLine(pizza);  // Pizza with Dough: cross, Sauce: mild, Topping: ham+pineapple
+        }
     }
 }
